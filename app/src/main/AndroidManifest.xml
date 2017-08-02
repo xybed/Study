@@ -28,9 +28,7 @@
         <activity android:name=".record.RecordActivity" />
         <activity android:name=".httptest.HttpTestActivity" />
         <activity android:name=".jni.JniActivity" />
-        <activity android:name=".rxbus.RxbusActivity">
-
-        </activity>
+        <activity android:name=".rxbus.RxbusActivity"/>
         <activity android:name=".rxbus.RxbusPostActivity" />
         <activity android:name=".rxbinding.RxBindingActivity" />
         <activity android:name=".realm.RealmActivity" />
@@ -44,12 +42,16 @@
         </receiver>
 
         <activity android:name=".broadcast.ReceiverActivity">
+
+        </activity>
+        <activity android:name=".service.ServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".service.MyService"/>
     </application>
 
 </manifest>
